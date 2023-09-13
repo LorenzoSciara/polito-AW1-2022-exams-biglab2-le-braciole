@@ -1,0 +1,31 @@
+# GET http://localhost:3001/api/films HTTP/1.1
+# GET http://localhost:3001/api/films/2 HTTP/1.1
+#
+#GET http://localhost:3001/api/films/filter/all HTTP/1.1
+#GET http://localhost:3001/api/films/filter/favorites HTTP/1.1
+#GET http://localhost:3001/api/films/filter/bestRated HTTP/1.1
+GET http://localhost:3001/api/films/filter/seenLastMonth HTTP/1.1
+# GET http://localhost:3001/api/films/filter/showUnseen HTTP/1.1
+# POST  http://localhost:3001/api/films HTTP/1.1
+# content-type: application/json
+
+# {  
+#         "title": "Pulp fiction",
+#         "favorite": 1, 
+#         "watchdate": "2022-03-11", 
+#         "rating": 5,
+#         "user" : 1
+# }
+ #PUT  http://localhost:3001/api/films/1 HTTP/1.1
+ #content-type: application/json
+
+ #{       
+ #        "title": "Pulp fiction",
+ #        "favorite": 1, 
+ #        "watchdate": "2022-03-11", 
+ #        "rating": 4,
+ #       "user" : 2
+ #}
+
+#PUT  http://localhost:3001/api/films/1/favorite HTTP/1.1
+# DELETE http://localhost:3001/api/films/155 HTTP/1.1
